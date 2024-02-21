@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Image Map</title>
+    <title>World Continent</title>
   </head>
   <body>
     <img
@@ -13,8 +13,7 @@
     <map name="image-map">
       <area
         target="_blank"
-        alt=""
-        title=""
+        alt="World Continent"
         href="https://en.wikipedia.org/wiki/Australia"
         coords="453,284,508,252"
         shape="rect"
