@@ -1,0 +1,69 @@
+    <!-- Style -->
+    <style>
+      @font-face {
+        font-family: sahel;
+        src: url("./Assest/fonts/Sahel-Light.eot") format("eot");
+        src: url("./Assest/fonts/Sahel-Light.woff") format("woff");
+        src: url("./Assest/fonts/Sahel-Light.woff2") format("woff2");
+      }
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        border: none;
+        outline: none;
+        font-family: sahel;
+        font-size: 18px;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #e3eefc;
+      }
+      a {
+        text-decoration: none;
+        color: #428ded;
+      }
+      form {
+        width: 460px;
+        background: #fff;
+        border-radius: 12px;
+        padding: 20px 28px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+      input {
+        margin: 18px 0;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        display: block;
+        width: 100%;
+        border: 1px solid #ded9ee;
+        border-radius: 8px;
+        padding: 10px;
+        transition: 180ms ease-in border-color;
+      }
+      input:focus {
+        border-color: #89888b;
+      }
+      input::placeholder {
+        color: #9b9b9b;
+        font-size: 16px;
+      }
+      button[type="submit"],
+      input[type="submit"] {
+        display: block;
+        width: 100%;
+        background: #428ded;
+        color: #fff;
+        border-radius: 8px;
+        cursor: pointer;
+        padding: 12px;
+      }
+    </style>
