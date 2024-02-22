@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ثبت نام در سون لرن</title>
+    <link
+      rel="shortcut icon"
+      href="./Assest/image/7learn-fav.png"
+      type="image/png"
+    />
+    <!-- Style -->
+    <style>
+      @font-face {
+        font-family: sahel;
+        src: url("./Assest/fonts/Sahel-Light.eot") format("eot");
+        src: url("./Assest/fonts/Sahel-Light.woff") format("woff");
+        src: url("./Assest/fonts/Sahel-Light.woff2") format("woff2");
+      }
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        border: none;
+        outline: none;
+        font-family: sahel;
+        font-size: 18px;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #e3eefc;
+      }
+      a {
+        text-decoration: none;
+        color: #428ded;
+      }
+      form {
+        width: 460px;
+        background: #fff;
+        border-radius: 12px;
+        padding: 20px 28px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+      input {
+        margin: 18px 0;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        display: block;
+        width: 100%;
+        border: 1px solid #ded9ee;
+        border-radius: 8px;
+        padding: 10px;
+        transition: 180ms ease-in border-color;
+      }
+      input:focus {
+        border-color: #89888b;
+      }
+      input::placeholder {
+        color: #9b9b9b;
+        font-size: 16px;
+      }
+      button[type="submit"],
+      input[type="submit"] {
+        display: block;
+        width: 100%;
+        background: #428ded;
+        color: #fff;
+        border-radius: 8px;
+        cursor: pointer;
+        padding: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <img src="https://7learn.com/assets/img/icons/logo.svg" alt="Logo" />
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="نام و نام خانوادگی"
+        autofocus
+        required
+      />
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="ایمیل"
+        required
+      />
+      <input
+        type="text"
+        name="mobile"
+        id="mobile"
+        placeholder="شماره موبایل"
+        required
+      />
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="رمز عبور"
+        maxlength="8"
+        required
+      />
+      <input
+        type="password"
+        name="password_confirm"
+        id="password"
+        placeholder="تکرار رمز عبور"
+        maxlength="8"
+        required
+      />
+      <input type="checkbox" name="accept_rules" id="accept" required />
+      <label for="accept" class="accept-rules-text">
+        <a href="https://7learn.com/" target="_blank"> قوانین</a>
+        سون لرن را مطالعه کرده‌ام و قبول دارم.
+      </label>
+      <button type="submit" name="submit">ثبت نام</button>
+    </form>
+  </body>
+</html>
