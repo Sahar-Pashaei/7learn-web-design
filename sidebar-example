@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position Fixed example</title>
+    <!-- Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 100%;
+        background-color: #e7e9eb;
+        overflow-y: auto;
+      }
+      h2 {
+        margin-left: 20px;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      a {
+        display: block;
+        text-decoration: none;
+        color: rgb(42, 36, 36);
+        padding: 8px 0 8px 20px;
+      }
+      a:hover:not(a.active) {
+        background-color: #cccccc;
+        cursor: pointer;
+      }
+      .active {
+        color: #ffffff;
+        background-color: #04aa6d;
+      }
+    </style>
+  </head>
+  <body>
+    <aside class="sidebar">
+      <h2>HTML Tutorial</h2>
+      <ul>
+        <li><a href="#" class="active">HTML Home</a></li>
+        <li><a href="#">HTML Introduction</a></li>
+        <li><a href="#">HTML Editors</a></li>
+        <li><a href="#">HTML Basic</a></li>
+        <li><a href="#">HTML Elements</a></li>
+        <li><a href="#">HTML Attributes</a></li>
+        <li><a href="#">HTML Headings</a></li>
+        <li><a href="#">HTML Paragraphs</a></li>
+        <li><a href="#">HTML Styles</a></li>
+        <li><a href="#">HTML Formatting</a></li>
+        <li><a href="#">HTML Quotation</a></li>
+        <li><a href="#">HTML Comments</a></li>
+        <li><a href="#">HTML Colors</a></li>
+        <li><a href="#">HTML CSS</a></li>
+        <li><a href="#">HTML Links</a></li>
+        <li><a href="#">HTML Images</a></li>
+        <li><a href="#">HTML Favicon</a></li>
+        <li><a href="#">HTML Page Title</a></li>
+        <li><a href="#">HTML Tables</a></li>
+        <li><a href="#">HTML Lists</a></li>
+        <li><a href="#">HTML Block & Inline</a></li>
+        <li><a href="#">HTML Div</a></li>
+      </ul>
+    </aside>
+  </body>
+</html>
