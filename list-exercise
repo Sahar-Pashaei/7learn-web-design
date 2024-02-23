@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تمرین جلسه 8 - لیست ها</title>
+    <style>
+      ul {
+        list-style-type: square;
+      }
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>سون لرن</h1>
+    <ul>
+      <li>
+        <a href="https://7learn.com/courses" target="_blank">
+          دوره‌های آموزشی
+        </a>
+      </li>
+      <li>
+        <a href="https://7learn.com/community" target="_blank"> جامعه‌ها</a>
+      </li>
+      <li>
+        <a href="https://7learn.com/blog" target="_blank"> وبلاگ </a>
+      </li>
+    </ul>
+    <hr />
+    <p>
+      <strong> اطلاعات بیشتر </strong>
+    </p>
+    <img
+      src="https://img.freepik.com/free-vector/programming-concept-illustration_114360-1351.jpg?w=1380&t=st=1708688863~exp=1708689463~hmac=2153a24ffe0dc4e251b006e1d01769d656ceac2a00dce2f8d5ea670cc7018e83"
+      alt="Woman coding"
+      width="300"
+    />
+  </body>
+</html>
