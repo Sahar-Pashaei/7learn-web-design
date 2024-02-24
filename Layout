@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout(using float)</title>
+    <style>
+      *,
+      body {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      a {
+        text-decoration: none;
+      }
+      /* header */
+      header {
+        background: #fef7da;
+        text-align: center;
+        position: relative;
+      }
+      header h1 {
+        color: #6e6d69;
+        font-size: 50px;
+        padding: 100px;
+      }
+      ul {
+        list-style: none;
+      }
+      nav {
+        background: #faf0c8;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+      }
+      nav li {
+        display: inline-block;
+        margin: 10px 30px;
+      }
+      nav a {
+        color: #6e6d69;
+        font-size: 18px;
+      }
+      /* section */
+      aside ul {
+        float: left;
+        width: 30%;
+        height: 350px;
+        padding: 25px 0 0 15px;
+        background: #d3d4c7;
+      }
+      aside a {
+        color: #6e6d69;
+      }
+      article {
+        float: left;
+        width: 70%;
+        height: 350px;
+        background: #f2dcdc;
+        color: #6e6d69;
+        overflow: auto;
+        padding: 25px 0 0 15px;
+      }
+      article h2 {
+        margin-bottom: 25px;
+      }
+      article p {
+        margin-bottom: 18px;
+      }
+      section::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      /* footer */
+      footer {
+        background: #fef7da;
+        color: #6e6d69;
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Header</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <aside>
+        <ul>
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">Javascript</a></li>
+        </ul>
+      </aside>
+
+      <article>
+        <h2>JavaScript</h2>
+        <p>
+          JavaScript, often abbreviated as JS, is a programming language that is
+          one of the core technologies of the World Wide Web, alongside HTML and
+          CSS.
+        </p>
+        <p>
+          As of 2023, 98.7% of websites use JavaScript on the client side for
+          webpage behavior, often incorporating third-party libraries.
+        </p>
+      </article>
+    </section>
+
+    <footer>
+      <p>Footer</p>
+    </footer>
+  </body>
+</html>
