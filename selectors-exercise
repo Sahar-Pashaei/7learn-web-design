@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors</title>
+    <style>
+      body {
+        font-size: 18px;
+      }
+      a {
+        text-decoration: none;
+        display: block;
+      }
+      div p {
+        background: yellow;
+      }
+      div > p {
+        color: red;
+      }
+      div ~ p {
+        color: purple;
+      }
+      div + p {
+        font-size: 24px;
+      }
+      a[target="_blank"] {
+        color: green;
+      }
+      span {
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        text-align: center;
+        line-height: 150px;
+        border: 4px solid brown;
+        border-radius: 50%;
+        padding: 40px;
+        margin: 50px;
+      }
+      span[class|="box"] {
+        border-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>Paragraph 1 in the div.</p>
+      <p>Paragraph 2 in the div.</p>
+      <section>
+        <p>Paragraph 3 in the div.</p>
+      </section>
+    </div>
+
+    <p>Paragraph 4. After a div.</p>
+    <p>Paragraph 5. Not in a div.</p>
+
+    <a href="#" target="_blank">Link with target="_blank"</a>
+    <a href="#" target="_self">Link with target="self"</a>
+
+    <span class="box">Box</span>
+    <span class="box-1">Box 1</span>
+    <span class="box-2">Box 2</span>
+    <span class="circle">Circle</span>
+  </body>
+</html>
