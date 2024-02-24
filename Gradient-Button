@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient Button</title>
+    <style>
+      button {
+        display: block;
+        border: none;
+        outline: none;
+        width: 200px;
+        color: #fff;
+        text-align: center;
+        padding: 30px;
+        text-transform: uppercase;
+        border-radius: 10px;
+        background-image: linear-gradient(
+          to right,
+          #f6d365 0%,
+          #fda085 51%,
+          #f6d365 100%
+        );
+        background-size: 200% auto;
+        box-shadow: 0 0 20px #eee;
+        transition: 0.5s;
+      }
+      button:hover {
+        background-position: right center; /* change the direction of the change here */
+        background-image: linear-gradient(
+          to right,
+          #f6d365 0%,
+          #fda085 51%,
+          #f6d365 100%
+        );
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Hover Me!</button>
+  </body>
+</html>
