@@ -1,0 +1,113 @@
+(* HTML *)
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7learn Project - Navbar</title>
+    <link rel="stylesheet" href="./Assest/style/menu.css" />
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/30c969ab32.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="#" class="home"><i class="fa-solid fa-house"></i></a>
+        </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)">دوره‌های آموزشی</a>
+          <ul class="dropdown-content">
+            <li><a href="#">آموزش طراحی وب</a></li>
+            <li><a href="#">آموزش جاوا اسکریپت </a></li>
+            <li><a href="#">آموزش پایتون</a></li>
+            <li><a href="#">آموزش فلاتر</a></li>
+          </ul>
+        </li>
+        <li><a href="#">جامعه‌ها</a></li>
+        <li>
+          <a href="#" class="start-learning">شروع یادگیری برنامه نویسی</a>
+        </li>
+        <li class="signup"><a href="#" class="active">ورود/عضویت</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
+
+
+(* CSS *)
+
+@font-face {
+  font-family: vazir;
+  src: local("Vazir"), local("Vazir-Medium"), ("vazir-medium"),
+    url("../fonts/Vazir-Medium.eot") format("eot"),
+    url("../fonts/Vazir-Medium.woff") format("woff"),
+    url("../fonts/Vazir-Medium.woff2") format("woff2");
+}
+body {
+  font-family: vazir;
+  font-weight: bold;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background: #e3eefc;
+  border-radius: 12px;
+}
+li {
+  display: inline-block;
+}
+li a {
+  display: block;
+  text-decoration: none;
+  color: #2a3554;
+  text-align: center;
+  padding: 14px 16px;
+}
+li a:hover:not(.active) {
+  color: #69a5f1;
+}
+.active {
+  background: #69a5f1;
+}
+.active:hover {
+  color: #2a3554de;
+  background: rgba(105, 165, 241, 0.75);
+}
+.start-learning {
+  color: #69a5f1;
+}
+.start-learning:hover {
+  opacity: 0.75;
+}
+.signup {
+  float: left;
+}
+
+/* Dropdown */
+.dropdown-content {
+  display: none;
+  min-width: 160px;
+  position: absolute;
+  background: #fff;
+  border-radius: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content li{
+ display: block;
+}
+.dropdown-content a {
+  color: #2a3554;
+  text-align: right;
+  padding: 14px 16px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
