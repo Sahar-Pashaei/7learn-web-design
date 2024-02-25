@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Owl Carousel Exercise</title>
+    <!-- Include Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+  </head>
+  <body>
+    <!-- We have a div with the class owl-carousel which will contain our carousel items. -->
+    <div class="owl-carousel">
+      <!-- Each carousel item is represented by a div with the class item, containing an img tag. -->
+      <div class="item">
+        <img
+          src="https://img.freepik.com/free-photo/beautiful-aerial-shot-fronalpstock-mountains-switzerland-beautiful-pink-blue-sky_181624-9315.jpg?w=2000&t=st=1708836822~exp=1708837422~hmac=96305d028ed4d7d4b6af4c7ccf9fa290a1f5bb2fea6ae255f8e0c52615e3fa94"
+          alt="Image 1"
+        />
+      </div>
+      <div class="item">
+        <img
+          src="https://img.freepik.com/free-photo/beautiful-aerial-shot-fronalpstock-mountains-switzerland-beautiful-pink-blue-sky_181624-9315.jpg?w=2000&t=st=1708836822~exp=1708837422~hmac=96305d028ed4d7d4b6af4c7ccf9fa290a1f5bb2fea6ae255f8e0c52615e3fa94"
+          alt="Image 2"
+        />
+      </div>
+      <div class="item">
+        <img
+          src="https://img.freepik.com/free-photo/beautiful-aerial-shot-fronalpstock-mountains-switzerland-beautiful-pink-blue-sky_181624-9315.jpg?w=2000&t=st=1708836822~exp=1708837422~hmac=96305d028ed4d7d4b6af4c7ccf9fa290a1f5bb2fea6ae255f8e0c52615e3fa94"
+          alt="Image 3"
+        />
+      </div>
+    </div>
+
+    <!-- Include jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Include Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      // We initialize the Owl Carousel by selecting the .owl-carousel class and calling the owlCarousel() function on it.
+
+      // We pass an object with configuration options to customize the carousel. In this example, we've enabled loop, navigation arrows, and responsive settings to control the number of items displayed at different screen sizes.
+
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true, // Enable loop
+          margin: 10, // Space between each item
+          nav: true, // Enable navigation arrows
+          responsive: {
+            0: {
+              items: 1, // Number of items shown on smaller screens
+            },
+            600: {
+              items: 3, // Number of items shown on medium screens
+            },
+            1000: {
+              items: 5, // Number of items shown on larger screens
+            },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
