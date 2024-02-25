@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.css"
     />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <button id="showAlert">Show Alert</button>
@@ -20,18 +21,17 @@
     <script>
       $(document).ready(function () {
         $("#showAlert").click(function () {
-          // Basic alert
+          //   Alert with a success message
           swal("Success!", "You clicked the button!", "success");
 
+          // Basic alert
+          //   swal("Hello, world!");
           // Alert with a title and text
           // swal("Title", "Here's a custom alert!", "info");
-
           // Alert with a success message
           // swal("Success!", "You clicked the button!", "success");
-
           // Alert with an error message
           // swal("Oops...", "Something went wrong!", "error");
-
           // Alert with a warning message
           // swal("Warning!", "You are about to do something dangerous!", "warning");
         });
