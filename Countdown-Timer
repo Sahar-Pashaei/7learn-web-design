@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Count Down Timer Plugin</title>
+    <title>Countdown Timer Plugin</title>
     <style>
       /*! CountdownTimer for jQuery @version2.0.0 (https://harshen.github.io/jQuery-countdownTimer/).
  *  Written by Harshen Pandey (https://remote.com/harshen) January 2014.
