@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Corner Menu Exercise</title>
+    <!-- fontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/30c969ab32.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      *,
+      body {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background-color: rgb(230, 221, 247);
+      }
+      a {
+        display: inline-block;
+        text-decoration: none;
+      }
+      .circle-menu {
+        position: fixed;
+        right: 1em;
+        bottom: 1em;
+      }
+      .menu-btn {
+        display: block;
+        width: 3.5em;
+        height: 3.5em;
+        background: linear-gradient(
+          106.7deg,
+          rgb(151, 150, 240) 12.1%,
+          rgb(255, 206, 236) 63.2%
+        );
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+      .menu-btn:active {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+      }
+      .menu-btn i {
+        font-size: 20px;
+        font-weight: bolder;
+        transition: all 0.2s;
+      }
+      .active .menu-btn {
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+      }
+      .active .menu-btn i {
+        transform: rotate(-45deg);
+      }
+      .circle-menu::after {
+        content: "";
+        display: block;
+        width: 3.5em;
+        height: 3.5em;
+        background: linear-gradient(
+          106.7deg,
+          rgb(151, 150, 240) 12.1%,
+          rgb(255, 206, 236) 63.2%
+        );
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        border-radius: 50%;
+        z-index: -2;
+      }
+      .active::after {
+        transform: scale3d(5.5, 5.5, 1);
+        transition: cubic-bezier(0.68, 1.5, 0.25, 1);
+      }
+      .menu-item {
+        display: block;
+        width: 3em;
+        height: 3em;
+        color: white;
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0.2em;
+        right: 0.2em;
+        z-index: -1;
+        transition: all 0.3s ease-in-out;
+      }
+      .menu-item:hover {
+        background: rgba(0, 0, 0, 0.3);
+      }
+      .active .menu-item:nth-child(1) {
+        transform: translate(1em, -7em);
+      }
+      .active .menu-item:nth-child(2) {
+        transform: translate(-3.5em, -6.3em);
+      }
+      .active .menu-item:nth-child(3) {
+        transform: translate(-6.5em, -3.2em);
+      }
+      .active .menu-item:nth-child(4) {
+        transform: translate(-7em, 1em);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="circle-menu" id="circle-menu">
+      <a class="menu-btn">
+        <i class="fa-solid fa-plus"></i>
+      </a>
+      <nav class="items-wrapper">
+        <a href="" class="menu-item">
+          <i class="fa-solid fa-house"></i>
+        </a>
+        <a href="" class="menu-item">
+          <i class="fa-solid fa-user"></i>
+        </a>
+        <a href="" class="menu-item">
+          <i class="fa-solid fa-chart-pie"></i>
+        </a>
+        <a href="" class="menu-item">
+          <i class="fa-solid fa-gear"></i>
+        </a>
+      </nav>
+    </div>
+    <!-- jQuery CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".menu-btn").click(function () {
+          $("#circle-menu").toggleClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
