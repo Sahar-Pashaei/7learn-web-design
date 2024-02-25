@@ -262,8 +262,10 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
+      // When the user scrolls down the page, the scroll event is triggered.
       $(document).ready(function () {
         $(window).scroll(function () {
+          // If the scroll position is greater than 100 pixels from the top, the "scroll to top" button fades in; otherwise, it fades out.
           if ($(this).scrollTop() > 100) {
             $("#scrollTopBtn").fadeIn();
           } else {
@@ -271,6 +273,7 @@
           }
         });
 
+        // When the button is clicked, jQuery's animate() function is used to smoothly scroll the page back to the top over 800 milliseconds.
         $("#scrollTopBtn").click(function () {
           $("html, body").animate({ scrollTop: 0 }, 800);
           return false;
