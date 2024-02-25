@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion Menu Esercise</title>
+    <style>
+      *,
+      body {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      .accordion {
+        background: #efefef;
+        border: 1px solid #ccc;
+      }
+      .accordion div {
+        color: white;
+        background: rgb(146, 146, 255);
+        font-size: 16px;
+        padding: 10px;
+      }
+      .accordion li {
+        background: white;
+        border-bottom: 1px solid #efefef;
+        cursor: pointer;
+      }
+      .accordion p {
+        display: none;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="accordion">
+      <li>
+        <div>برای مشاهده جزئیات کلیک کنید</div>
+        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+      </li>
+      <li>
+        <div>برای مشاهده جزئیات کلیک کنید</div>
+        <p>
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+          از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
+          سطرآنچنان که لازم است
+        </p>
+      </li>
+      <li>
+        <div>برای مشاهده جزئیات کلیک کنید</div>
+        <p>
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+          از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
+          سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
+        </p>
+      </li>
+    </ul>
+
+    <!--jQuery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".accordion > li > div").click(function () {
+          if ($(this).next().is(":hidden")) {
+            $(".accordion ul").slideUp();
+          }
+          $(this).next().slideToggle();
+        });
+      });
+    </script>
+  </body>
+</html>
