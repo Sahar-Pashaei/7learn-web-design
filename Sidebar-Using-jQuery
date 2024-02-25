@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar Using jQuery</title>
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/30c969ab32.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      *,
+      body {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      a {
+        display: inline-block;
+        text-decoration: none;
+        color: inherit;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .wrapper {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        overflow: hidden;
+      }
+      .course-title {
+        color: purple;
+        display: flex;
+        justify-content: center;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 32px;
+        font-weight: bold;
+        margin-top: 200px;
+      }
+      .bars {
+        color: plum;
+        font-size: 34px;
+        cursor: pointer;
+        z-index: 1000;
+        margin: 20px;
+      }
+      .icon {
+        z-index: 1000;
+        position: relative;
+      }
+      .overlay {
+        width: 100%;
+        height: 100%;
+        background: purple;
+        position: absolute;
+        left: 0;
+        bottom: -98%;
+        transition: all 0.5s ease;
+      }
+      ul {
+        width: 100%;
+        text-align: center;
+        margin-top: 90px;
+        margin-left: -10px;
+      }
+      li {
+        margin: 20px 0;
+      }
+      li a {
+        color: white;
+        position: relative;
+        overflow: hidden;
+      }
+      li a::after {
+        content: "";
+        display: block;
+        background: white;
+        border: 2px;
+        height: 1.5px;
+        left: 0;
+        bottom: -10px;
+        transform: translateX(-101%);
+      }
+      li a:hover::after {
+        animation: border-anim 0.5s ease normal;
+      }
+      @keyframes border-anim {
+        0% {
+          transform: translateX(-101%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      .anim {
+        width: 25%;
+        left: 0;
+        bottom: 0;
+        transition: all 0.5s ease;
+        animation: menu-anim 1.5s ease-out forwards;
+      }
+      @keyframes menu-anim {
+        0% {
+          width: 100%;
+          left: 0;
+          bottom: -98%;
+        }
+        33% {
+          width: 100%;
+          left: -98%;
+          bottom: -98%;
+        }
+        66% {
+          width: 100%;
+          left: -98%;
+          bottom: 0;
+        }
+        100% {
+          width: 25%;
+          left: 0;
+          bottom: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="icon">
+        <i class="fa-solid fa-bars bars"></i>
+      </div>
+      <p class="course-title">jQuery Projects: 1-Sidebar</p>
+      <span class="menu"></span>
+      <div class="overlay">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Courses</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- jQuery CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".bars").click(function () {
+          $(".overlay").toggleClass("anim");
+        });
+      });
+    </script>
+  </body>
+</html>
