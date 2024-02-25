@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card</title>
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/30c969ab32.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      *,
+      body {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      .card {
+        width: 376px;
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        transition: all 0.5s;
+      }
+      .card:hover {
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+      }
+      .card-thumb {
+        height: 235px;
+        background: #000;
+        overflow: hidden;
+        transition: all 0.3s;
+      }
+      .card:hover .card-thumb {
+        height: 150px;
+      }
+      .card-thumb img {
+        display: block;
+        width: 100%;
+        height: auto;
+        opacity: 1;
+        transition: all 0.5s ease-in-out;
+      }
+      .card:hover .card-thumb img {
+        opacity: 0.6;
+        transform: scale(1.2);
+      }
+      .card-date {
+        min-width: 72px;
+        min-height: 35px;
+        background: #373c4c;
+        color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        position: absolute;
+        top: 4%;
+        left: 2%;
+        padding: 1.5px;
+      }
+      .date-day {
+        display: block;
+        font-size: 16px;
+      }
+      .date-month {
+        font-size: 11px;
+      }
+      .card-body {
+        height: 185px;
+        position: relative;
+        padding: 20px;
+        transition: all 0.3s;
+      }
+      .card:hover .card-body {
+        height: 330px;
+      }
+      .card-category {
+        background: #373c4c;
+        color: #fff;
+        position: absolute;
+        top: -25px;
+        left: 0;
+        height: 25px;
+        line-height: 25px;
+        padding: 0 15px;
+      }
+      .card-title {
+        color: #373C4C;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 0 0 10px 0;
+        margin: 0;
+      }
+      .card-subtitle {
+        color: #373c4c;
+        font-size: 18px;
+        padding: 0 0 10px 0;
+        margin: 0;
+      }
+      .card-desc {
+        color: #666c74;
+        font-size: 16px;
+        line-height: 27px;
+        position: absolute;
+        top: 100px;
+        right: 20px;
+        left: 20px;
+        bottom: 65px;
+        transform: translateY(25px);
+        opacity: 0;
+        transition: opacity 0.2s, transform 0.2s;
+      }
+      .card:hover .card-desc {
+        opacity: 1;
+      }
+      .card-footer {
+        color: #a3a9ab;
+        font-size: 13px;
+        position: absolute;
+        right: 20px;
+        left: 20px;
+        bottom: 18px;
+      }
+      .card-footer i {
+        font-size: 21px;
+        margin-right: 6px;
+      }
+      .icon-comment {
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-thumb">
+        <a href="">
+          <img
+            src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=2000&t=st=1708872427~exp=1708873027~hmac=2857646f8e17d37f805144c90382ff829d32b5690bd35997a9a71e1a9b1ff9cd"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="card-date">
+        <span class="date-day">2</span>
+        <span class="date-month">May</span>
+      </div>
+      <div class="card-body">
+        <div class="card-category">John Doe</div>
+        <div class="card-title">Frontend Developer</div>
+        <div class="card-subtitle">Lorem, ipsum</div>
+        <p class="card-desc">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
+          repellendus quam corporis corrupti ipsum similique, aliquam quis
+          labore illo perspiciatis!
+        </p>
+      </div>
+      <div class="card-footer">
+        <span>
+          <i class="fa-regular fa-clock icon-clock"></i>
+          30 minutes
+        </span>
+        <span>
+          <i class="fa-regular fa-comment icon-comment"></i>
+          18 comments
+        </span>
+      </div>
+    </div>
+  </body>
+</html>
