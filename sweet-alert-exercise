@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SweetAlert Exercise</title>
+    <!-- Include SweetAlert CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.css"
+    />
+  </head>
+  <body>
+    <button id="showAlert">Show Alert</button>
+
+    <!-- Include jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Include SweetAlert JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#showAlert").click(function () {
+          // Basic alert
+          swal("Success!", "You clicked the button!", "success");
+
+          // Alert with a title and text
+          // swal("Title", "Here's a custom alert!", "info");
+
+          // Alert with a success message
+          // swal("Success!", "You clicked the button!", "success");
+
+          // Alert with an error message
+          // swal("Oops...", "Something went wrong!", "error");
+
+          // Alert with a warning message
+          // swal("Warning!", "You are about to do something dangerous!", "warning");
+        });
+      });
+    </script>
+  </body>
+</html>
