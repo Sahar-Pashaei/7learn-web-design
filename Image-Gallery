@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+
+    <style>
+      html {
+        box-sizing: border-box;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+        padding: 0;
+        margin: 0;
+      }
+
+      .grid-container {
+        max-width: 1216px;
+        padding: 16px;
+        margin-right: auto;
+        margin-left: auto;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: auto 280px auto;
+        grid-gap: 6px;
+      }
+
+      .grid__item {
+        overflow: hidden;
+      }
+
+      .grid__item-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 6px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid__item">
+        <img
+          src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?w=2000&t=st=1709453191~exp=1709453791~hmac=ebc529e2acb63b8bf58d46bf58b60eaf8afdd5d47d9fa8d2ef83865914d00bb2"
+          alt=""
+          class="grid__item-image"
+        />
+      </div>
+      <div class="grid__item">
+        <img
+          src="https://img.freepik.com/free-photo/river-surrounded-by-forests-cloudy-sky-thuringia-germany_181624-30863.jpg?w=2000&t=st=1709453191~exp=1709453791~hmac=c07f7f41074ebc6092812e2375dd6c693573ba277b141b9f7cf4942e07e3c797"
+          alt=""
+          class="grid__item-image"
+        />
+      </div>
+      <div class="grid__item">
+        <img
+          src="https://img.freepik.com/free-photo/beautiful-scenery-pathway-forest-with-trees-covered-with-frost_181624-42376.jpg?w=2000&t=st=1709453205~exp=1709453805~hmac=317b7bc11d59bb32f33e079c58dd11ef9fd22667c7c1cbf9858a18eef62b6df3"
+          alt=""
+          class="grid__item-image"
+        />
+      </div>
+      <div class="grid__item">
+        <img
+          src="https://img.freepik.com/free-photo/lake-mountains_1204-502.jpg?w=2000&t=st=1709453221~exp=1709453821~hmac=39c6c071a8ecd6821e472fc7a40ffce58e257d0f71424037415da47555b41458"
+          alt=""
+          class="grid__item-image"
+        />
+      </div>
+      <div class="grid__item">
+        <img
+          src="https://img.freepik.com/free-photo/looking-across-valley-towering-mountains_181624-37022.jpg?w=2000&t=st=1709453229~exp=1709453829~hmac=1be729ae31a4ee31db57029d577109739735c71d8bd6c924d31604b191eed6bd"
+          alt=""
+          class="grid__item-image"
+        />
+      </div>
+      <div class="grid__item">
+        <img
+          src="https://img.freepik.com/free-photo/summer-landscape-mountains-blue-sky_661209-67.jpg?w=2000&t=st=1709453252~exp=1709453852~hmac=96210d8d18c1c4fcf9a24af9f4b0b55f3baa5f7d67eaa07b4137021e3ccd1783"
+          alt=""
+          class="grid__item-image"
+        />
+      </div>
+      <div class="grid__item">
+        <img
+          src="https://img.freepik.com/free-photo/beautiful-shot-green-field-covered-with-yellow-flowers-near-cherry-blossom-trees_181624-24215.jpg?w=2000&t=st=1709453268~exp=1709453868~hmac=24b694ec446f0c0ec1b213e9664ea62caa7654310c2b5813146cdb434fdcb74e"
+          alt=""
+          class="grid__item-image"
+        />
+      </div>
+      <div class="grid__item">
+        <img
+          src="https://img.freepik.com/free-photo/beautiful-green-park_1417-1443.jpg?w=2000&t=st=1709453282~exp=1709453882~hmac=c03ba3f34ca67a3499c152319c254613fde83888b83741642472beb243edfa7a"
+          alt=""
+          class="grid__item-image"
+        />
+      </div>
+      <div class="grid__item">
+        <img
+          src="https://img.freepik.com/free-photo/brown-orange-trees_395237-151.jpg?w=2000&t=st=1709453300~exp=1709453900~hmac=6dd31070a604eb3be5f25a7c3428563d60466d8e2f5d22bf1664b335ab04a081"
+          alt=""
+          class="grid__item-image"
+        />
+      </div>
+      <div class="grid__item">
+        <img
+          src="https://img.freepik.com/free-photo/autum-treees-fog_463209-57.jpg?w=2000&t=st=1709453304~exp=1709453904~hmac=6169cbd32584a83c4b059904475ab13e12746f19d02bdd66e62a10aaaee002f3"
+          alt=""
+          class="grid__item-image"
+        />
+      </div>
+      <div class="grid__item">
+        <img
+          src="https://img.freepik.com/free-photo/lake-fog-sunrise-with-autumn-foliage-mountains-new-england-stowe_649448-5438.jpg?w=2000&t=st=1709453312~exp=1709453912~hmac=7b5ecfa5ce5dbb74fcebc7843dc7145e13bf331f2d036d1caaa000724dc73b19"
+          alt=""
+          class="grid__item-image"
+        />
+      </div>
+      <div class="grid__item">
+        <img
+          src="https://img.freepik.com/free-photo/mysterious-winter-landscape-majestic-mountains-winter_146671-14057.jpg?w=2000&t=st=1709453386~exp=1709453986~hmac=62066f787d3d90dad3b89419806221984da064aecc482cf202835b56eaaa5e02"
+          alt=""
+          class="grid__item-image"
+        />
+      </div>
+    </div>
+  </body>
+</html>
