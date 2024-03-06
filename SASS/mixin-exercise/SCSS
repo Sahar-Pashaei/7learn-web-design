@@ -1,0 +1,31 @@
+@mixin font($size, $weight, $family) {
+  font-size: $size;
+  font-weight: $weight;
+  font-family: $family;
+}
+
+@mixin color($color) {
+  color: $color;
+}
+
+@mixin center() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin responsive($breakpoint) {
+  @media only screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+h3 {
+  @include font(30px, 500, Arial);
+  @include color(violet);
+  @include center();
+  @include responsive(992px) {
+    font-size: 18px;
+  }
+}
