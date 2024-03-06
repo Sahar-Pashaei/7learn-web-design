@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In Form(SASS)</title>
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/30c969ab32.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <section class="wrapper">
+          <div class="heading">
+            <h1 class="text text-large">
+                Sign In
+              <p class="text text-normal">
+                <span>
+                  New user?
+                  <a href="#" class="text text-links"> Create an account </a>
+                </span>
+              </p>
+            </h1>
+          </div>
+
+          <!-- Form  -->
+          <form action="" name="signin" class="form">
+            <!-- Email -->
+            <div class="input-control">
+              <label for="email" class="input-label" hidden>
+                Email Address
+              </label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                class="input-field"
+                placeholder="Email Address"
+              />
+            </div>
+            <!-- Password -->
+            <div class="input-control">
+              <label for="password" class="input-label" hidden>
+                Password
+              </label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="input-field"
+                placeholder="Password"
+              />
+            </div>
+
+            <div class="input-control">
+              <a href="#" class="text text-link">Forgot Password</a>
+              <input
+                type="submit"
+                name="submit"
+                id="submit"
+                class="input-submit"
+                value="Sign in"
+                disabled
+              />
+            </div>
+          </form>
+
+          <!-- Striped -->
+          <div class="striped">
+            <span class="striped-line"></span>
+            <span class="striped-text">Or</span>
+            <span class="striped-line"></span>
+          </div>
+          <!-- Method -->
+          <div class="method">
+            <!-- Google -->
+            <div class="method-control">
+              <a href="#" class="method-action">
+                <i class="fa-brands fa-google"></i>
+                <span>Sing in with Google</span>
+              </a>
+            </div>
+            <!-- Facebook -->
+            <div class="method-control">
+              <a href="#" class="method-action">
+                <i class="fa-brands fa-facebook-f"></i>
+                <span>Sing in with Facebook</span>
+              </a>
+            </div>
+            <!-- Apple -->
+            <div class="method-control">
+              <a href="#" class="method-action">
+                <i class="fa-brands fa-apple"></i>
+                <span>Sing in with Apple</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
