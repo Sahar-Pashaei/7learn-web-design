@@ -1,0 +1,225 @@
+:root {
+  --color-white: #ffffff;
+  --color-light: #f1f5f9;
+  --color-black: #121212;
+  --color-night: #001632;
+  --color-red: #f44336;
+  --color-blue: #1a73e8;
+  --color-gray: #80868b;
+  --color-grayish: #dadce0;
+  --shadow-normal: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+html {
+  font-size: 100%;
+  font-size-adjust: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: normal;
+  color: var(--color-black);
+  background: var(--color-light);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  padding: 0;
+  margin: 0;
+}
+
+a,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  outline: none;
+  border: none;
+  background: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 80rem;
+  min-height: 100vh;
+  width: 100%;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.text {
+  font-family: inherit;
+  line-height: inherit;
+  text-transform: unset;
+  text-rendering: optimizeLegibility;
+  &-large {
+    font-style: 2rem;
+    font-weight: 600;
+    color: var(--color-black);
+  }
+  &-normal {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-black);
+  }
+  &-links {
+    font-style: 1rem;
+    font-weight: 400;
+    color: var(--color-blue);
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.main {
+  .wrapper {
+    max-width: 28rem;
+    width: 100%;
+    color: var(--color-black);
+    background: var(--color-white);
+    outline: none;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 2rem 2.5rem;
+    margin: 2rem auto;
+
+    .form {
+      width: 100%;
+      height: auto;
+      margin-top: 2rem;
+      .input-control {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.25rem;
+        &:last-child {
+          justify-content: space-between;
+        }
+      }
+      .input-field {
+        width: 100%;
+        height: auto;
+        color: var(--color-black);
+        background: var(--color-light);
+        font-family: inherit;
+        font-style: 1rem;
+        font-weight: 400;
+        line-height: inherit;
+        text-transform: unset;
+        text-rendering: optimizeLegibility;
+        outline: none;
+        border: none;
+        border-radius: 2rem;
+        padding: 0.75rem 1.25rem;
+      }
+      .input-submit {
+        max-width: 40%;
+        height: auto;
+        color: var(--color-white);
+        background: var(--color-blue);
+        font-family: inherit;
+        font-style: 1rem;
+        font-weight: 500;
+        line-height: inherit;
+        text-transform: unset;
+        text-rendering: optimizeLegibility;
+        outline: none;
+        border: none;
+        border-radius: 2rem;
+        cursor: pointer;
+        box-shadow: var(--shadow-medium);
+        padding: 0.65rem 1.25rem;
+      }
+    }
+    .striped {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem 0;
+      &-line {
+        flex: auto;
+        flex-basis: auto;
+        border: none;
+        outline: none;
+        height: 2px;
+        background-color: var(--color-grayish);
+      }
+      &-text {
+        font-family: inherit;
+        font-weight: 500;
+        font-style: 1rem;
+        line-height: inherit;
+        color: var(--color-black);
+        margin: 0 1rem;
+      }
+    }
+    .method {
+      &-control {
+        margin-bottom: 1rem;
+      }
+      &-action {
+        font-family: inherit;
+        font-style: 0.95rem;
+        font-weight: 500;
+        line-height: inherit;
+        text-transform: capitalize;
+        text-rendering: optimizeLegibility;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        outline: none;
+        border: 2px solid var(--color-grayish);
+        border-radius: 2rem;
+        color: var(--color-black);
+        background: var(--color-white);
+        padding: 0.35rem 1.25rem;
+        transition: all 0.35s ease;
+
+        &:hover {
+          background: var(--color-light);
+        }
+        .fa-google {
+          color: var(--color-red);
+          font-style: 1.65rem;
+          line-height: inherit;
+          margin-right: 0.5rem;
+        }
+        .fa-facebook-f {
+          color: var(--color-blue);
+          font-style: 1.65rem;
+          line-height: inherit;
+          margin-right: 0.5rem;
+        }
+        .fa-apple {
+          color: var(--color-black);
+          font-style: 1.65rem;
+          line-height: inherit;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+}
