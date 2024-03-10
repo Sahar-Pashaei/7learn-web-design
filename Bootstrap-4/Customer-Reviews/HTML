@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 4 - Exercise 4</title>
+    <!-- Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/30c969ab32.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-light">
+    <div class="container">
+      <div class="row mt-5">
+        <!-- Review 1 -->
+        <div
+          class="col-xs-12 col-sm-8 col-md-6 col-lg-4 col-xl-4 offset-sm-2 offset-md-0 offset-lg-0 offset-xl-0 mb-4"
+        >
+          <div class="review h-100">
+            <!-- Reviewer -->
+            <div class="reviewer">
+              <!-- Reviewer Image -->
+              <div class="reviewer__image reviewer__image-1"></div>
+              <!-- Reviewer Information -->
+              <div class="reviewer__info">
+                <span class="reviewer__info-name">Louis Hoffman</span>
+                <span class="reviewer__info-job">Happy Officer</span>
+              </div>
+            </div>
+
+            <!-- Review Text -->
+            <p class="review__text">
+              Happy reviewer is super excited being Part of Happy addons Family.
+              Happy reviewer is super excited being Part of Happy addons Family
+            </p>
+
+            <!-- Rating -->
+            <div class="review__rating">
+              <div class="review__rating-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+
+        <div
+          class="col-xs-12 col-sm-8 col-md-6 col-lg-4 col-xl-4 offset-sm-2 offset-md-0 offset-lg-0 offset-xl-0 mb-4"
+        >
+          <div class="review h-100">
+            <!-- Reviewer -->
+            <div class="reviewer">
+              <!-- Reviewer Image -->
+              <div class="reviewer__image reviewer__image-2"></div>
+              <!-- Reviewer Information -->
+              <div class="reviewer__info">
+                <span class="reviewer__info-name">Tim Desmond</span>
+                <span class="reviewer__info-job">Happy Officer</span>
+              </div>
+            </div>
+
+            <!-- Review Text -->
+            <p class="review__text">
+              Happy reviewer is super excited being Part of Happy addons Family.
+            </p>
+
+            <!-- Rating -->
+            <div class="review__rating">
+              <div class="review__rating-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+
+        <div
+          class="col-xs-12 col-sm-8 col-md-6 col-lg-4 col-xl-4 offset-sm-2 offset-md-0 offset-lg-0 offset-xl-0 mb-4"
+        >
+          <div class="review h-100">
+            <!-- Reviewer -->
+            <div class="reviewer">
+              <!-- Reviewer Image -->
+              <div class="reviewer__image reviewer__image-3"></div>
+              <!-- Reviewer Information -->
+              <div class="reviewer__info">
+                <span class="reviewer__info-name">Thoma Midleditch</span>
+                <span class="reviewer__info-job">Happy Officer</span>
+              </div>
+            </div>
+
+            <!-- Review Text -->
+            <p class="review__text">
+              Happy reviewer is super excited being Part of Happy addons Family.
+              Happy reviewer is super excited being Part of...
+            </p>
+
+            <!-- Rating -->
+            <div class="review__rating">
+              <div class="review__rating-icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
