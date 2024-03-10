@@ -1,0 +1,122 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333333;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.review {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  padding: 16px 24px;
+  border-radius: 6px 15px 6px 15px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Reviewer */
+
+.review .reviewer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Reviewer Image */
+
+.review .reviewer__image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.reviewer__image-1 {
+  background: skyblue
+    url("https://s30.picofile.com/file/8473385484/person_1.jpg") no-repeat
+    center/cover;
+}
+
+.reviewer__image-2 {
+  background: skyblue
+    url("https://s31.picofile.com/file/8473385542/person_2.jpg") no-repeat
+    center/cover;
+}
+
+.reviewer__image-3 {
+  background: skyblue
+    url("https://s31.picofile.com/file/8473385800/person_3.jpg") no-repeat
+    center/cover;
+}
+
+/* Reviewer Information */
+
+.review .reviewer__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.review .reviewer__info-name {
+  font-weight: 600;
+}
+
+.review .reviewer__info-job {
+  color: #959595;
+  font-size: 14px;
+}
+
+/* Review Text */
+
+.review__text {
+  height: 100px;
+  line-height: 1.6;
+  margin: 30px 0;
+}
+
+/* Rating */
+
+.review__rating-icon {
+  color: #ffbf36;
+  font-size: 18px;
+}
+
+/* Project Responsive */
+
+@media only screen and (max-width: 768px) {
+  .review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review__text {
+    width: 70%;
+    height: auto;
+    text-align: center;
+  }
+}
