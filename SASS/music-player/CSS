@@ -15,7 +15,7 @@
 // Colors
 $color-black: #212121;
 $color-blue: #03a9f4;
-$color-red: #d30320;
+$color-dark-blue: #0C7499;
 
 // Variables
 $boxshadow-0: 0 1px 3px -5px rgba(0, 0, 0, 0.13),
@@ -106,7 +106,7 @@ a {
 
 .range {
   position: relative;
-  top: -1.5rem;
+  top: -1.2rem;
   right: 0;
   left: 0;
   margin: auto;
@@ -128,8 +128,8 @@ a {
     height: 100%;
     background: linear-gradient(
       to right,
-      rgba($color-red, 0.5),
-      rgba($color-red, 0.85)
+      rgba($color-dark-blue, 0.5),
+      rgba($color-dark-blue, 0.85)
     );
     border-radius: $radius;
     overflow: hidden;
@@ -151,7 +151,7 @@ a {
   &:focus,
   &:hover {
     &:after {
-      background: rgba($color-red, 0.95);
+      background: rgba($color-dark-blue, 0.95);
     }
   }
 }
@@ -177,7 +177,7 @@ a {
 .info__song {
   font-size: 1.15rem;
   font-weight: 400;
-  color: $color-red;
+  color: $color-dark-blue;
 }
 
 .body__buttons {
@@ -208,7 +208,7 @@ a {
 
   &:focus,
   &:hover {
-    color: darken(rgba($color-red, 0.95), 8%);
+    color: darken(rgba($color-dark-blue, 0.95), 8%);
     opacity: 1;
     box-shadow: 0 6px 9px rgba(33, 33, 33, 0.1),
       0 6px 16px rgba(33, 33, 33, 0.15);
@@ -222,7 +222,7 @@ a {
   padding-left: 1.19rem;
   margin-left: 0.5rem;
   font-size: 1.25rem;
-  color: rgba($color-red, 0.95);
+  color: rgba($color-dark-blue, 0.95);
 }
 
 .list--buttons li:first-of-type a,
@@ -233,7 +233,7 @@ a {
 
   &:focus,
   &:hover {
-    color: $color-red;
+    color: $color-dark-blue;
     opacity: 0.75;
   }
 }
@@ -243,7 +243,7 @@ a {
 
   &:focus,
   &:hover {
-    color: $color-red;
+    color: $color-dark-blue;
   }
 }
 
