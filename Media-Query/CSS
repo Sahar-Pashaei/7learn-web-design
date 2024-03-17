@@ -1,0 +1,107 @@
+@font-face {
+  font-family: vazir;
+  src: url("../fonts/Vazir-Medium.eot") format("eot"),
+    url("../fonts/Vazir-Medium.woff") format("woff"),
+    url("../fonts/Vazir-Medium.woff2") format("woff2");
+}
+
+*,
+body {
+  box-sizing: border-box;
+  font-family: vazir;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f1f1f1;
+  padding: 10px;
+}
+
+/* header */
+header {
+  text-align: center;
+  background: #fff;
+  padding: 30px;
+}
+header h1 {
+  color: #428ded;
+  font-size: 50px;
+}
+
+/* Navigation bar */
+ul {
+  list-style: none;
+  background: #428ded;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+li {
+  display: inline-block;
+  text-align: center;
+}
+li:last-child {
+  float: left;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 14px 16px;
+}
+li:hover {
+  background: #f2f7fe;
+  cursor: pointer;
+}
+li:hover a {
+    color: #428ded;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  margin-top: 20px;
+}
+.rightcolumn {
+  float: right;
+  width: 75%;
+}
+.fakeimg {
+  width: 100%;
+  background: #f2f7fe;
+  padding: 20px;
+}
+
+.leftcolumn {
+  float: right;
+  width: 25%;
+  background: #f1f1f1;
+  padding-right: 20px;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background: #428ded;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav li {
+    float: none;
+    width: 100%;
+  }
+}
