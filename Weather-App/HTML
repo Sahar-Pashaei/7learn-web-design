@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="Assest/style/weather.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <!-- 🔍Search -->
+        <form action="" class="weather-app__form">
+          <div class="search-input">
+            <input type="search" placeholder="type a city name..." />
+          </div>
+          <div class="search-btn">
+            <input type="submit" value="Search" />
+          </div>
+        </form>
+
+        <!-- Overview -->
+
+        <div class="overveiw">
+          <h1 id="cityname">Tehran</h1>
+          <ul>
+            <li>
+              Last updated:
+              <span id="date"> Friday, 10:15 </span>
+            </li>
+            <li id="description">Rain</li>
+          </ul>
+        </div>
+
+        <!-- Weather temperature and details -->
+
+        <div class="details-wrapper">
+          <!-- Temperature -->
+          <div class="weather-temperature">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/266/original/icons8-rain.gif?1685100905"
+              alt="rain"
+              class="icon rain-icon"
+            />
+            <strong class="temperature">22</strong>
+            <strong>
+              <span class="unit"> °C </span>
+            </strong>
+          </div>
+
+          <!-- Details -->
+          <div class="weather-details">
+            <ul>
+              <li>
+                Humidity:
+                <span class="humadity"> 60 </span>
+                %
+              </li>
+              <li>
+                Wind:
+                <span class="wind-speed"> 5 </span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Image -->
+          <div class="details-img">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/272/original/girl-with-umbrella.png?1685102265"
+              class="nature-img"
+            />
+          </div>
+        </div>
+
+        <!-- Weather Forecast -->
+        <div class="forecast">
+          <!-- Friday -->
+          <div class="weather-forecast">
+            <div class="weather-forecast-date">Fri</div>
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/260/original/icons8-haze.gif?1685097196"
+              alt="haze"
+            />
+            <div class="weather-forecast-temperature">
+              <span class="weather-forecast-temperature-max"> 23° </span>
+              |
+              <span class="weather-forecast-temperature-max"> 18° </span>
+            </div>
+          </div>
+
+          <!-- Saturday -->
+          <div class="weather-forecast">
+            <div class="weather-forecast-date">Sat</div>
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/230/original/icons8-sun_%281%29.gif?1685086513"
+              alt="sun"
+              width="40"
+              height="40"
+            />
+            <div class="weather-forecast-temperature">
+              <span class="weather-forecast-temperature-max">30°</span>
+              |
+              <span class="weather-forecast-temperature-min">24°</span>
+            </div>
+          </div>
+
+          <!-- Sunday -->
+          <div class="weather-forecast">
+            <div class="weather-forecast-date">Sun</div>
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/230/original/icons8-sun_%281%29.gif?1685086513"
+              alt="sun"
+              width="40"
+              height="40"
+            />
+            <div class="weather-forecast-temperature">
+              <span class="weather-forecast-temperature-max">30°</span>
+              |
+              <span class="weather-forecast-temperature-min">24°</span>
+            </div>
+          </div>
+
+          <!-- Monday -->
+          <div class="weather-forecast">
+            <div class="weather-forecast-date">Mon</div>
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/264/original/icons8-windy-weather.gif?1685100602"
+              alt="windy"
+            />
+            <div class="weather-forecast-temperature">
+              <span class="weather-forecast-temperature-max">23°</span>
+              |
+              <span class="weather-forecast-temperature-min">19°</span>
+            </div>
+          </div>
+
+          <!-- Tuesday -->
+          <div class="weather-forecast">
+            <div class="weather-forecast-date">Tue</div>
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/266/original/icons8-rain.gif?1685100905"
+              alt="rain"
+              width="40"
+              height="40"
+            />
+            <div class="weather-forecast-temperature">
+              <span class="weather-forecast-temperature-max">18°</span>
+              |
+              <span class="weather-forecast-temperature-min">12°</span>
+            </div>
+          </div>
+
+          <!-- Wednesday -->
+          <div class="weather-forecast">
+            <div class="weather-forecast-date">Wed</div>
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/267/original/icons8-cloud-lightning.gif?1685100914"
+              alt="thunderstorm"
+            />
+            <div class="weather-forecast-temperature">
+              <span class="weather-forecast-temperature-max">14°</span>
+              |
+              <span class="weather-forecast-temperature-min">10°</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
