@@ -1,0 +1,186 @@
+:root {
+  --blue-color: #428ded;
+  --gray-color: #878787;
+  --input-color: #edf5ffdd;
+  --placeholder-color: #b4d3f9;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  font-family: "Jost", sans-serif;
+}
+
+input,
+button {
+  font-family: inherit;
+}
+
+body {
+  background: #dceafb;
+  background-image: url("https://img.freepik.com/free-vector/abstract-watercolor-pastel-background_87374-139.jpg?w=1800&t=st=1710667566~exp=1710668166~hmac=9a6dd90613b93c863900681646df2ba44669192a98f61c3259f1bb8cbf32d4c2");
+  backdrop-filter: blur(10px);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-app {
+  width: 700px;
+  background: white;
+  border: 3px solid var(--blue-color);
+  border-radius: 8px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+  margin: 0 auto;
+}
+
+/* 🔍Search */
+
+.weather-app__form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search-input {
+  width: 100%;
+}
+
+input {
+  display: block;
+  width: 100%;
+  border: 2px solid var(--blue-color);
+}
+
+.search-input input {
+  background: var(--input-color);
+  color: var(--blue-color);
+  border-radius: 5px;
+  padding: 10px 0 10px 6px;
+}
+
+.search-input input:focus {
+  outline: none;
+}
+
+.search-input input::placeholder {
+  color: var(--placeholder-color);
+  font-size: 16px;
+}
+
+/* 🔍Search button */
+
+.search-btn input {
+  color: white;
+  background: var(--blue-color);
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 30px;
+}
+
+/* Overview */
+
+.overveiw {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+#cityname {
+  color: var(--blue-color);
+  font-size: 28px;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+ul {
+  list-style: none;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+li {
+  color: var(--blue-color);
+}
+
+#description {
+  margin-top: 6px;
+}
+
+/* Weather temperature and details */
+
+.details-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details-img {
+  width: 200px;
+  height: 200px;
+}
+
+.details-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Weather temperature */
+
+.weather-temperature .temperature {
+  font-size: 84px;
+  line-height: 0.5;
+}
+
+.weather-temperature .rain-icon {
+  vertical-align: top;
+}
+
+.weather-temperature .unit {
+  font-size: 24px;
+  position: relative;
+  top: -34px;
+}
+
+.weather-details {
+  padding-top: 8px;
+}
+
+/* Image */
+.nature-img {
+  max-width: 100% !important;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+/* Weather Forecast */
+
+.forecast {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather-forecast {
+  color: var(--gray-color);
+  text-align: center;
+  margin-top: 40px;
+}
