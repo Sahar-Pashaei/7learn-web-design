@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Music Player</title>
-    <link rel="stylesheet" href="../Asset/css/music-player.css" />
+    <link rel="stylesheet" href="Assest/style/music-player.css" />
 
     <script
       src="https://kit.fontawesome.com/30c969ab32.js"
@@ -31,7 +31,7 @@
             </ul>
 
             <img
-              src="http://ecx.images-amazon.com/images/I/51XSHShbPiL.jpg"
+              src="https://s30.picofile.com/file/8473622526/dam463404_0.jpg"
               alt="Album cover"
             />
 
@@ -39,11 +39,10 @@
           </div>
 
           <div class="body__info">
-            <div class="info__album">The Hunting Party</div>
 
-            <div class="info__song">Final Masquerade</div>
+            <div class="info__song">Welcome to Wonderland</div>
 
-            <div class="info__artist">Linkin Park</div>
+            <div class="info__artist">Anson Seabra</div>
           </div>
 
           <div class="body__buttons">
